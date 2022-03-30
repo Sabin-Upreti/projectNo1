@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>learning javascript</title>
+</head>
+<body>
+	<label>Do enter digit:</label>
+	<input type="number" id="first"></br>
+	<label>Enter Another digit:</label>
+	<input type="number" id="second"><br></br>
+	<label>Total sum:</label>
+	<output type="number" id="fourth"><br></br>
+	<button onclick="addfxn()">ADD</button>
+	<button onclick="alertfxn()">alert me</button>
+	<button onclick="confirmfxn()">Confirmation box</button>
+	<button onclick="promptfxn(name)">Prompt box</button>
+	<!-- <p id="fourth">result= -->
+	</p>
+<script type="text/javascript">
+	function promptfxn(name){
+		var name=prompt("Do Enter Your Name",);
+		if(!name.length==0){
+		document.write("you have entered "+name);	
+		}
+		else{
+		
+		document.write("you have not entered");
+	}
+	}
+	function confirmfxn(){
+		var x=confirm("yeah everything is confirm.");
+		if(x==true)
+		{
+			document.write("you pressed Ok");
+
+		}
+		else{
+			document.write("you pressed cancel");
+		}
+	}
+	function addfxn() {
+		
+		var x=document.getElementById("first").value;
+		var y=document.getElementById("second").value;
+		x=Number(x);
+		y=Number(y);
+	
+		document.getElementById("fourth").innerHTML=x+y;
+	}
+	function alertfxn() {
+	 	alert("I am an alert box");
+	 } 
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+*{
+	font-family: sans-serif;
+}
+
+body{
+	margin: 0px;
+	background-color: yellow;
+}
+
+.header{
+	background-color: orange;
+	text-align: center;
+	font-size: 40px;
+};
+
+.xyz{
+	background-color: red;
+}
+
+.nav{
+	background-color: red;
+	text-align: center;
+	/*font-size: 10px;*/
+	height: 80%;
+	width: 100%;
+}
+
+li{
+	display: inline;
+	width: 100%;
+	/*text-align: center;*/
+	margin: 30px;
+	justify-content: space-between;
+
+}
+
+ul li ul li{
+	display: block;
+	visibility: hidden;
+	margin: 0px;
+}
+a{
+	text-decoration: underline;
+	line-height: 40px;
+	
+}
